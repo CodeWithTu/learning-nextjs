@@ -1,20 +1,13 @@
-import Link from "next/link";
+import Header from "@/app/components/layout/Header";
+import Hero from "@/app/components/layout/Hero";
+import HomeMenu from "@/app/components/layout/HomeMenu";
 
 export default function Home() {
   return (
     <>
-      <header className="flex items-center justify-between">
-        <Link className="text-primary font-semibold text-2xl" href={""}>
-          ST PIZZA
-        </Link>
-        <nav className="flex gap-4 text-gray-500">
-          <Link href={""}>Home</Link>
-          <Link href={""}>Menu</Link>
-          <Link href={""}>About</Link>
-          <Link href={""}>Contact</Link>
-          <Link href={""}>Login</Link>
-        </nav>
-      </header>
+      <Header />
+      <Hero />
+      <HomeMenu />
     </>
   );
 }
